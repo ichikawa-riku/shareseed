@@ -1,24 +1,20 @@
-# README
+# 環境構築手順書
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+まず任意のディレクトリにクローンをおこなってください。
 
-* Ruby version
+```
+$git clone https://github.com/ichikawa-riku/shareseed.git
+```
 
-* System dependencies
+ShareSeedのDBを作成してください。
 
-* Configuration
+```
+$rake db:create
+```
 
-* Database creation
+サーバーを起動してください
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+$rails s
+```
