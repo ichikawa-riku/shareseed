@@ -1,14 +1,3 @@
 .container
-  .row
-    .col.s12
-      .card.blue.darken-1
-        .card-content.white-text
-          %span.card-title 質問のタイトル
-          %p
-            I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.
-        .card-action
-          %a{:href => "#"} タグ
-          %a{:href => "#"} タグ
-          %a{:href => "#"} タグ
-          %a{:href => "#"} タグ
-          %a{:href => "#"} タグ
+  = render @posts
+
