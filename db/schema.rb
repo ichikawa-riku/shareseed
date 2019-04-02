@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_02_210045) do
+ActiveRecord::Schema.define(version: 2019_04_02_210148) do
 
   create_table "comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "content", null: false
@@ -38,6 +38,13 @@ ActiveRecord::Schema.define(version: 2019_04_02_210045) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["post_id"], name: "index_postscripts_on_post_id"
+  end
+
+  create_table "tag_maps", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "post_id"
+    t.bigint "tag_id"
+    t.index ["post_id"], name: "index_tag_maps_on_post_id"
+    t.index ["tag_id"], name: "index_tag_maps_on_tag_id"
   end
 
   create_table "tags", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
