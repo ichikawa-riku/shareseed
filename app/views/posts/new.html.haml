@@ -1,0 +1,9 @@
+.container
+  = form_for @post do |f|
+    .row.col.s12.input-field
+      = f.text_field :title
+      = f.label :title
+    .row.col.s12.input-field
+      = f.text_area :content, class: "materialize-textarea"
+      = f.label :content
+    = f.submit class: "new badge light-blue lighten-4"
