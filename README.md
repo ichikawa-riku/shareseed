@@ -7,6 +7,11 @@
 $git clone https://github.com/ichikawa-riku/shareseed.git
 ```
 
+Gemをインストールしてください
+```
+$bundle install
+```
+
 ShareSeedのDBを作成してください。
 
 ```
